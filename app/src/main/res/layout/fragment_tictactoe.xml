@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/btnA1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/alert_light_frame" />
+
+    <ImageButton
+        android:id="@+id/btnA2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnA3"
+        app:layout_constraintStart_toEndOf="@+id/btnA1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/alert_light_frame" />
+
+    <ImageButton
+        android:id="@+id/btnA3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/alert_light_frame" />
+
+    <ImageButton
+        android:id="@+id/btnB1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnC1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnA1"
+        app:layout_constraintVertical_bias="0.512"
+        app:srcCompat="@android:drawable/alert_light_frame" />
+
+    <ImageButton
+        android:id="@+id/btnB2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnC2"
+        app:layout_constraintEnd_toStartOf="@+id/btnB3"
+        app:layout_constraintStart_toEndOf="@+id/btnB1"
+        app:layout_constraintTop_toBottomOf="@+id/btnA2"
+        app:layout_constraintVertical_bias="0.512"
+        app:srcCompat="@android:drawable/alert_light_frame" />
+
+    <ImageButton
+        android:id="@+id/btnB3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnC3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnA3"
+        app:layout_constraintVertical_bias="0.512"
+        app:srcCompat="@android:drawable/alert_light_frame" />
+
+    <ImageButton
+        android:id="@+id/btnC1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="256dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/alert_light_frame" />
+
+    <ImageButton
+        android:id="@+id/btnC2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="256dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnC3"
+        app:layout_constraintStart_toEndOf="@+id/btnC1"
+        app:srcCompat="@android:drawable/alert_light_frame" />
+
+    <ImageButton
+        android:id="@+id/btnC3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="256dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/alert_light_frame" />
+
+    <TextView
+        android:id="@+id/tvWinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnC2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

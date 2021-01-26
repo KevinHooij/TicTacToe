@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="TicTacToe_txt">Tic Tac Toe</string>
+    <string name="continue_txt">Continue match</string>
+    <string name="NewMatch_txt">Start New Match</string>
+    <string name="currentmatches_txt">Current Matches</string>
+    <string name="roomid_txt">Room ID:</string>
+    <string name="opponent_txt">Opponent:</string>
+    <string name="createnewroom_txt">Create New Match</string>
+    <string name="joinmatch_txt">Join Match</string>
+    <string name="roomcode_txt">Room Code</string>
+    <string name="entercode_txt">Enter Code</string>
+    <string name="findOpponent_txt">Find Opponent</string>
+    <string name="placeholder_txt">Placeholder</string>
+    <string name="room_id_txt">Room ID:</string>
+    <string name="opp_name_txt">Opponent:</string>
+</resources>

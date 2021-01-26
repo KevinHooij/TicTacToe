@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/currentMatchesFragment">
+
+    <fragment
+        android:id="@+id/newMatchFragment"
+        android:name="com.example.tictactoe.ui.NewMatchFragment"
+        android:label="NewMatchFragment" >
+        <action
+            android:id="@+id/action_newMatchFragment_to_enterCodeFragment"
+            app:destination="@id/enterCodeFragment" />
+        <action
+            android:id="@+id/action_newMatchFragment_to_currentMatchesFragment"
+            app:destination="@id/currentMatchesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterCodeFragment"
+        android:name="com.example.tictactoe.EnterCodeFragment"
+        android:label="EnterCodeFragment" >
+        <action
+            android:id="@+id/action_enterCodeFragment_to_newMatchFragment"
+            app:destination="@id/newMatchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/currentMatchesFragment"
+        android:name="com.example.tictactoe.ui.CurrentMatchesFragment"
+        android:label="fragment_current_matches"
+        tools:layout="@layout/fragment_current_matches" >
+        <action
+            android:id="@+id/action_currentMatchesFragment_to_newMatchFragment"
+            app:destination="@id/newMatchFragment" />
+        <action
+            android:id="@+id/action_currentMatchesFragment_to_tictactoeFragment"
+            app:destination="@id/tictactoeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tictactoeFragment"
+        android:name="com.example.tictactoe.ui.TictactoeFragment"
+        android:label="TictactoeFragment" >
+        <action
+            android:id="@+id/action_tictactoeFragment_to_currentMatchesFragment"
+            app:destination="@id/currentMatchesFragment" />
+    </fragment>
+</navigation>
